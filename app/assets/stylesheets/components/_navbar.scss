@@ -44,6 +44,7 @@
 }
 
 .main-nav-link {
+  display: inline-block;
   padding: 20px 32px 17px;
   color: $light-white;
   text-decoration: none;
@@ -56,6 +57,6 @@
 }
 
 /* HIDING RESPONSIVE BLOCKS ----------------------------------------------- */
-.header-close, .button-burger, .main-nav-heading {
+.header-close, .button-burger, .main-nav h4 {
   display: none;
 }
