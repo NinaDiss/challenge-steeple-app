@@ -92,38 +92,37 @@
 
   /* BUTTON ------------------------------------------ */
   .button-burger {
-    width: 37px;
-    height: 30px;
+    width: 64px;
+    height: 64px;
     border: none;
     background-color: transparent;
     display: block;
-    margin: 16px;
-  }
+    // margin: 16px;
 
-  .button-burger {
-      span {
+    span {
       display: block;
       width: 36px;
       height: 4px;
       background-color: $white;
       border-radius: 2px;
+      margin: auto;
     }
   }
 
-  .button-burger span:nth-child(1) {
+  .button-burger span:first-child {
     transform: translateY(-8px);
   }
-  .button-burger.active span:nth-child(1) {
+  .button-burger.active span:first-child {
     width: 22px;
-    transform: translateY(-3px) translateX(-3px) rotateZ(-45deg);
+    transform: translateY(-3px) translateX(-10px) rotateZ(-45deg);
   }
 
-  .button-burger span:nth-child(3) {
+  .button-burger span:last-child {
     transform: translateY(8px);
   }
 
-  .button-burger.active span:nth-child(3) {
+  .button-burger.active span:last-child {
     width: 22px;
-    transform: translateY(3px) translateX(-3px) rotateZ(45deg);
+    transform: translateY(3px) translateX(-10px) rotateZ(45deg);
   }
 }
