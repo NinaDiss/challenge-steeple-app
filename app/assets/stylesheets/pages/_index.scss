@@ -1,1 +1,14 @@
 @import "home";
+
+// Shared style
+body {
+  font-family: $sans-serif;
+  font-weight: $main-weight;
+  font-size: $main-size;
+}
+
+// Reset style
+* {
+  margin: 0px;
+  padding: 0px;
+}
