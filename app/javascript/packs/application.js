@@ -1,34 +1,37 @@
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
 
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
-require("channels")
+import "channels";
 
-
-// Uncomment to copy all static images under ../images to the output folder and reference
-// them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
-// or the `imagePath` JavaScript helper below.
-//
-// const images = require.context('../images', true)
-// const imagePath = (name) => images(name, true)
-
-
-// ----------------------------------------------------
-// Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
-// WRITE YOUR OWN JS STARTING FROM HERE 👇
-// ----------------------------------------------------
-
-// External imports
-import "bootstrap";
-
-// Internal imports, e.g:
-// import { initSelect2 } from '../components/init_select2';
+const burger = document.querySelector('.button-burger');
+const overlay = document.querySelector('.main-header-overlay');
+const mainNav = document.querySelector('.main-nav');
+const body = document.querySelector('body');
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
+
+  // Au clic sur le burger menu
+  burger.addEventListener('click', (event) => {
+    // Transformation du burger menu en fleche
+    event.currentTarget.classList.toggle('active');
+    // Translation de la gauche vers la droite de la main-nav
+    mainNav.classList.toggle('active');
+    // Apparition de l'overlay
+    overlay.classList.toggle('active');
+    // Empecher le scrollvertical lorsque le menu est ouvert
+    body.classList.toggle("overflow_hidden");
+  });
+
+  // Au clic sur l'overlay, quitter le burger menu
+  overlay.addEventListener('click', (event) => {
+    // Transformation du burger menu en fleche
+    burger.classList.remove('active');
+    // Translation de la gauche vers la droite de la main-nav
+    mainNav.classList.remove('active');
+    // Disparition de l'overlay
+    event.currentTarget.classList.remove('active');
+    // Empecher le scrollvertical lorsque le menu est ouvert
+    body.classList.remove("overflow_hidden");
+  });
 });
