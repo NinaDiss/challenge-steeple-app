@@ -1,10 +1,10 @@
-const burger = document.querySelector('.button-burger');
-const overlay = document.querySelector('.main-header-overlay');
-const mainNav = document.querySelector('.main-nav');
-const body = document.querySelector('body');
-
 
 const openBurgerMenu = () => {
+  const burger = document.querySelector('.button-burger');
+  const overlay = document.querySelector('.main-header-overlay');
+  const mainNav = document.querySelector('.main-nav');
+  const body = document.querySelector('body');
+
   // Au clic sur le burger menu
   burger.addEventListener('click', (event) => {
     // Transformation du burger menu en fleche
