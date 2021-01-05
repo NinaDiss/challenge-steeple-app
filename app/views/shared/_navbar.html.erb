@@ -1,0 +1,28 @@
+  <header class="main-header">
+    <div class="main-header-container">
+      <div class="main-header-content">
+        <div class="main-header-content-left">
+          <button class="button-burger" type="button" title="Menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <%= link_to root_path do %>
+            <%= image_tag("logo-steeple.svg", alt: "Logo Steeple", class: "logo-steeple") %>
+          <% end %>
+        </div>
+
+        <nav class="main-nav">
+          <h4 class="main-nav-heading">Menu</h4>
+          <ul>
+            <li><%= link_to "Accueil", root_path, class: "main-nav-link active" %></li>
+            <li><%= link_to "Vos avis", root_path, class: "main-nav-link" %></li>
+            <li><%= link_to "Vos idées", root_path, class: "main-nav-link" %></li>
+            <li><%= link_to "Nos conseils", root_path, class: "main-nav-link" %></li>
+            <li><%= link_to "Nous contacter", root_path, class: "main-nav-link" %></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-header-overlay"></div>
+    </div>
+  </header>
