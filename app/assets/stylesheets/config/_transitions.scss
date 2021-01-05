@@ -1,0 +1,24 @@
+.button-burger span,
+.main-nav {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.main-header-overlay {
+  -webkit-transition: width 0s ease, opacity 0.5s ease;
+  -moz-transition: width 0s ease, opacity 0.5s ease;
+  -ms-transition: width 0s ease, opacity 0.5s ease;
+  -o-transition: width 0s ease, opacity 0.5s ease;
+  transition: width 0s ease, opacity 0.5s ease;
+}
+
+.main-nav-link {
+  -webkit-transition: color .5s ease;
+  -moz-transition: color .5s ease;
+  -ms-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+}

@@ -1,0 +1,16 @@
+/* MAIN CONTENT ----------------------------------------------- */
+
+main {
+  padding-top: 32px;
+  width: 80%;
+  margin: auto;
+
+  .main-container {
+    max-width: 1280px;
+    margin: auto;
+  }
+  p {
+    color: $light-gray;
+    padding-bottom: 15px;
+  }
+}

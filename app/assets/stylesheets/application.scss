@@ -1,7 +1,26 @@
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
+@import "config/shadows";
+@import "config/transitions";
 
-// Your CSS partials
+// CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Responsive design
+@import "responsive/tablet";
+@import "responsive/mobile";
+
+// Shared style
+body {
+  font-family: $sans-serif;
+  font-weight: $main-weight;
+  font-size: $main-size;
+}
+
+// Reset style
+* {
+  margin: 0px;
+  padding: 0px;
+}
