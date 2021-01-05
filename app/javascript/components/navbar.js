@@ -1,8 +1,10 @@
 const switchActiveLink = () => {
   // Pour chaque lien du menu
-  document.querySelectorAll('.main-nav-link').forEach((link) => {
+  const link = document.querySelectorAll('.main-nav-link')
+
+  for (var i = 0; i < link.length; i++) {
     // Au clic sur un lien du menu
-    link.addEventListener('click', (event) => {
+    link[i].addEventListener('click', (event) => {
       event.preventDefault();
 
       const activeLink = document.querySelector('.main-nav-link.active')
@@ -11,7 +13,7 @@ const switchActiveLink = () => {
       // Ajouter la classe active au lien clique
       event.currentTarget.classList.add('active');
     });
-  });
+  }
 }
 
 export { switchActiveLink };
