@@ -5,6 +5,8 @@
   height: 64px;
   display: flex;
   box-shadow: $light-shadow;
+  position: fixed;
+  width: 100%;
 }
 
 .main-header-content {
