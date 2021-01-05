@@ -1,12 +1,63 @@
-.navbar-lewagon {
+/* HEADER ----------------------------------------------- */
+
+.main-header {
+  background-color: $gray;
+  height: 64px;
+  display: flex;
+  box-shadow: $light-shadow;
+}
+
+.main-header-content {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.main-header-container {
+  width: 80%;
+  margin: auto;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+/* NAV ----------------------------------------------- */
+
+.main-nav {
+  ul {
+    display: flex;
+    margin-bottom: 2px;
+  }
+}
+
+.main-nav{
+  li {
+    list-style: none;
+  }
+}
+.main-nav-link {
+  color: $light-white;
+  text-decoration: none;
+  padding: 20px 32px 17px;
+  text-transform: uppercase;
+}
+
+.main-nav-link.active {
+    border-bottom: 2px solid $white;
+    color: $white;
+}
+
+.main-nav li.active:hover a {
+  color:  $white;
+}
+
+.main-nav li:hover {
+  cursor: pointer;
+  a {
+    color: $strong-white;
+  }
+}
+
+/* HIDING RESPONSIVE BLOCKS ----------------------------------------------- */
+.header-close, .button-burger, .main-nav-heading {
+  display: none;
 }
