@@ -1,16 +1,19 @@
 /* MAIN CONTENT ----------------------------------------------- */
 
 main {
-  padding-top: 32px+64px;
   width: 80%;
   margin: auto;
+  padding-top: 32px+64px;
 
   .main-container {
     max-width: 1280px;
     margin: auto;
+    position: relative;
+    z-index: -2;
   }
+
   p {
-    color: $light-gray;
     padding-bottom: 15px;
+    color: $light-gray;
   }
 }

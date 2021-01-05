@@ -2,70 +2,68 @@
 
 @media screen and (max-width: 1024px) {
 
-  .main-header-container{
-    width: 100%;
-  }
-
+  .main-header,
   .main-header-content {
     display: block;
   }
 
-  .main-header {
-    display: block;
+  .main-header-container{
+    width: 100%;
   }
 
   .main-nav {
     width: 300px;
     height: 100vh;
-    background-color: $gray;
     position: relative;
     z-index: 100;
     transform: translateX(-500px);
-  }
+    background-color: $gray;
 
-  .main-nav ul {
-    display: block;
-    padding-left: 2px;
-    padding-bottom: 0px;
-  }
+    ul {
+      display: block;
+      padding-left: 2px;
+      padding-bottom: 0px;
+    }
 
-  .main-nav.active {
-    transform: translateX(0px);
+    &.main-nav.active {
+      transform: translateX(0px);
+    }
+
+    h4 {
+      display: block;
+      padding: 16px;
+      line-height: 1.625rem;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      text-align: center;
+      color: $light-white;
+    }
   }
 
   .main-nav-link {
     display: inline-block;
     padding: 23px 28px 23px;
     line-height: 18px;
-  }
 
-  .main-nav-link.active {
-    border-left: 2px solid $white;
-    border-bottom: none;
-  }
-
-  .main-nav-heading {
-    display: block;
-    line-height: 1.625rem;
-    text-transform: uppercase;
-    color: $light-white;
-    font-size: 1.25rem;
-    text-align: center;
-    padding: 16px;
+    &.active {
+      border-left: 2px solid $white;
+      border-bottom: none;
+    }
   }
 
   .main-header-content-left {
     height: 64px;
-    padding: 0px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 200;
+    padding: 0px 24px;
     box-shadow: $light-shadow;
   }
 
-  /* OVERLAY ----------------------------------------- */
+  /* OVERLAY --------------------------------------------- */
+
   .main-header-overlay {
     width: 0vw;
     height: 100vh;
@@ -74,16 +72,11 @@
     left: 0px;
     z-index: 1;
     background-color: transparent;
-  }
 
-  .main-header-overlay.active {
-    width: 100vw;
-    background-color: $overlay;
-  }
-
-  .main-container {
-    position: relative;
-    z-index: -2;
+    &.active {
+      width: 100vw;
+      background-color: $overlay;
+    }
   }
 
   .overflow_hidden {
@@ -94,18 +87,17 @@
   .button-burger {
     width: 64px;
     height: 64px;
+    display: block;
     border: none;
     background-color: transparent;
-    display: block;
-    // margin: 16px;
 
     span {
-      display: block;
       width: 36px;
       height: 4px;
-      background-color: $white;
-      border-radius: 2px;
+      display: block;
       margin: auto;
+      border-radius: 2px;
+      background-color: $white;
     }
   }
 

@@ -1,12 +1,11 @@
-
 .main-header-content-left a {
   width: 64px;
-  height: 64px
-}
+  height: 64px;
+  display: block;
 
-.logo-steeple {
-  height: 36px;
-  padding: 14px 20px;
-  box-sizing: content-box;
-  margin: auto;
+  .logo-steeple {
+    height: 36px;
+    padding: 14px 20px;
+    margin: auto;
+  }
 }
